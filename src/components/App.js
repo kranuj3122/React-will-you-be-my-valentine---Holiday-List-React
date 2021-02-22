@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react";
 import "../styles/App.css";
-import CityName from "./CityName";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -43,11 +43,7 @@ class App extends Component {
         {/* Do not remove the main div */}
         <ol>
           {this.cityList.map((cell, index) => (
-            <CityName
-              _key={"location" + (index + 1)}
-              name={cell.name}
-              country={cell.country}
-            />
+            <li key={"location" + (index + 1)}>{cell.name}</li>
           ))}
         </ol>
       </div>
