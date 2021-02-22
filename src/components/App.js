@@ -44,7 +44,7 @@ class App extends Component {
         <ol>
           {this.cityList.map((cell, index) => (
             <CityName
-              key={"location" + (index + 1)}
+              _key={"location" + (index + 1)}
               name={cell.name}
               country={cell.country}
             />

@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const CityName = ({name,country}) => {
-    return (
-        <li>{name}({country})</li>
-    );
+const CityName = ({ _key, name, country }) => {
+  return (
+    <li key={_key}>
+      {name}({country})
+    </li>
+  );
 };
 
 export default CityName;
